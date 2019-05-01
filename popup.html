@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			body {
+			 width: 400px;
+			 height:auto;
+			}
+			button {
+				width: 65px;
+				background-color: #2557e3;
+				border: none;
+				color: white;
+				padding: 3px;
+				text-align: center;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			button:hover {
+				background-color: #1540c8;
+			}
+			.table {
+				width: 98%;
+				height: auto;
+				background-color: white;
+				color: black;
+				border: double;
+				overflow:auto;
+			}
+		</style>
+		<script src="popup.js"></script>
+	</head>
+	
+	<body>
+		<div id='banner'>
+			<h1>Bookmarkr - Share bookmarks!</h1>
+			<h3>
+				<input
+					type='text'
+					id='urlsToAdd'>
+				</input>
+				<button id='addUrls'>Add</button>
+				<button id='submit'>Format</button>
+				<button id='populateList'>Populate</button>
+			</h3>
+			<input type='checkbox' id='checkall'>Add all</input>
+		</div>	
+		<div class='table' id='table'>Bookmarkr</div>			
+	</body>
+</html>
